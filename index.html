@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>POO</title>
+    <script src="script.js"></script>
+    <section id="Bv"></section>
+</head>
+
+<body class="corpo" align="center">
+
+    <table border="0" align="center" width="80%">
+        <th colspan="2" class="td"></th>
+
+        <tr>
+            <h1>Aula Invertida</h1>
+        </tr>
+
+    </table>
+    <br>
+    <table border="0" align="center" width="80%">
+        <tr height="25">
+
+            <td class="td">
+                <a href="objetoeclasse.html" class="td"><b>Objeto e Classe</b></a>
+            </td>
+            <td class="td">
+                <a href="#Características" class="td"><b>Características</b></a>
+            </td>
+            <td class="td">
+                <a href="#Pilares da Orientação a Objeto" class="td"><b>Pilares da Orientação a Objeto</b></a>
+            </td>
+            <td class="td">
+                <a href="#Atributos" class="td"><b>Atributos</b></a>
+            </td>
+            <td class="td">
+                <a href="#Métodos" class="td"><b>Métodos</b></a>
+            </td>
+            <td class="td">
+                <a href="#Pacotes" class="td"><b>Pacotes</b></a>
+            </td>
+            <td class="td">
+                <a href="#Interface Java" class="td"><b>Interface Java</b></a>
+            </td>
+            </td>
+            <td class="td">
+                <a href="#Enumeração" class="td"><b>Enumeração</b></a>
+            </td>
+            <td class="td">
+                <a href="#Serialização de Objetos Java" class="td"><b>Serialização de Objetos Java</b></a>
+            </td>
+            </td>
+            <td class="td">
+                <a href="#Relacionamento de Objetos" class="td"><b>Relacionamento de Objetos</b></a>
+            </td>
+            <td class="td">
+                <a href="referencias.html" class="td"><b>Referências</b></a>
+            </td>
+        </tr>
+    </table>
+
+    <main>
+        <!-- Programação Orientada a Objeto -->
+        <section id="Programação Orientada a Objeto">
+            <table width="80%" align="center">
+                <button onclick="document.getElementById('id01').style.display='block'"
+                    class="w3-button">Programação Orientada a Objeto</button>
+                <!-- Modal -->
+            <div id="id01" class="w3-modal">
+         <div class="w3-modal-content">
+         <div class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+            <h1>Programação Orientada a Objeto</h1>
+         <p>A programação orientada a objetos é um modelo de programação onde diversas classes possuem
+            características que definem um objeto na vida real. Cada classe determina o comportamento do
+            objeto definido por métodos e seus estados possíveis definidos por atributos. São exemplos
+            de linguagens de programação orientadas a objetos: C++, Java, C#, Object Pascal, entre
+            outras.
+            <br>
+            <br>Este modelo foi criado com o intuito de aproximar o mundo real do mundo virtual.
+            Para dar suporte à definição de Objeto, foi criada uma estrutura chamada Classe, que reúne
+            objetos com características em comum, descreve todos os serviços disponíveis por seus
+            objetos e quais informações podem ser armazenadas.</p>
+            <img width="50%" height="50%" src="https://cognablogs.s3.amazonaws.com/academiatech.blog.br/wp-content/uploads/2023/03/31105937/ilustracao-notebook-30032023-1024x576.webp">
+        
+        </div>
+        </div>
+        </div>
+                <tr>
+                    <td colspan="2">
+                        <p>
+                        </p>
+                    </td>
+
+                </tr>
+                <tr>
+
+                    <div class="w3-container">
+                        <img src="https://cognablogs.s3.amazonaws.com/academiatech.blog.br/wp-content/uploads/2023/03/31105937/ilustracao-notebook-30032023-1024x576.webp"
+                            style="width:30%;cursor:zoom-in"
+                            onclick="document.getElementById('modal01').style.display='block'">
+                        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                            <div class="w3-modal-content w3-animate-zoom">
+                                <img src="https://cognablogs.s3.amazonaws.com/academiatech.blog.br/wp-content/uploads/2023/03/31105937/ilustracao-notebook-30032023-1024x576.webp"
+                                    style="width:100%">
+                            </div>
+                        </div>
+                    </div>
+                </tr>
+
+
+            <!-- The Modal -->
+            
+            <section id="Características"></section>
+            <h2>Características</h2>
+            <img width="30%" height="50%" src="carac.png">
+            <p>A programação orientada a objetos (POO) é um paradigma de programação que se baseia em
+                conceitos de objetos e classes. Aqui estão algumas características importantes da POO:
+                <br>
+                <br>Classes e Objetos: A POO organiza o código em classes, que são modelos para criar
+                objetos. As classes definem os atributos (dados) e métodos (comportamentos) que os
+                objetos podem ter.
+                <br>
+                <br><b>Mensagens e Comunicação:</b> A comunicação entre objetos ocorre por meio do envio
+                de mensagens. Os objetos interagem uns com os outros chamando métodos.
+                <br>
+                <br><b>Associação:</b> As classes podem estar associadas umas com as outras, indicando
+                relacionamentos entre objetos. Isso pode ser feito através de associações de um para um,
+                um para muitos e muitos para muitos.
+                <br>
+                <br><b>Políticas de Acesso:</b> A POO permite definir regras de acesso aos dados e
+                comportamentos dos objetos, determinando quem pode acessar e modificar esses elementos.
+                <br>
+                <br>Essas são algumas das principais características da programação orientada a objetos,
+                que é amplamente usada em muitas linguagens de programação, como Java, C++, Python e C#.
+                Ela promove a modularidade, a reutilização de código e o desenvolvimento de software
+                mais organizado e compreensível.
+    </p>
+            <button onclick="document.getElementById('id02').style.display='block'"
+            class="w3-button">Características</button>
+            
+            <!-- The Modal -->
+            <div id="id02" class="w3-modal">
+              <div class="w3-modal-content">
+                <div class="w3-container">
+                  <span onclick="document.getElementById('id02').style.display='none'"
+                  class="w3-button w3-display-topright">&times;</span>
+                  <img src="caracteristicas.png"/>
+                </div>
+              </div>
+            </div>
+            
+<!-- pilares-->
+<section id="Pilares da Orientação a Objeto"></section>
+<h2>Pilares</h2>
+<img width="30%" height="50%" src="pilar.png">
+<br>
+<p>
+    <br><b>Abstração:</b> significa "esconder" partes da implementação do objeto expondo
+    apenas uma interface simples para seu uso. Pense por exemplo num forno de micro-ondas,
+    você não precisa entender toda a complexidade de como os componentes internos trabalham
+    para gerar as ondas e produzir calor, você quer apenas apertar um ou dois botões e ter
+    uma refeição quente pra comer. Toda essa complexidade são detalhes de implementação,
+    você não precisa conhecê-los.
+    <br>
+    <br><b>Encapsulamento:</b> Encapsulamento se refere à construção do objeto de modo a
+    proteger o acesso direto a seus dados internos. Ao encapsularmos um objeto estamos
+    agrupando propriedades e métodos que estão diretamente relacionados dentro de um mesmo
+    objeto, permitindo que essas propriedades sejam acessadas apenas através de métodos
+    públicos. Desta forma tratamos de questões importantes como segurança e confiabilidade
+    do estado do objeto.
+    <br>
+
+</div>
+    <br><b>Herança: </b>As classes suportam o recurso herança, característica comum na orientação a objetos onde uma classe pode herdar comportamentos e características de outra classe. Vemos então que não só alguns atributos como também alguns mecanismos (ou métodos, traduzindo para POO) mudam.
+    <br>
+    
+    <br>Quando dizemos que uma classe A é um tipo de classe B, dizemos que a classe A herda
+    as características da classe B e que a classe B é mãe da classe A, estabelecendo então
+    uma relação de herança entre elas.
+</p>
+<button onclick="document.getElementById('id03').style.display='block'"
+class="w3-button">Herança</button>
+
+<div id="id03" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id03').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <img src="heranca.png"/>
+    </div>
+  </div>
+</div>
+
+<p>
+    <b>Polimorfismo:</b> O polimorfismo permite que objetos de diferentes classes sejam
+    tratados de maneira uniforme. Isso ocorre através do uso de interfaces, classes
+    abstratas e métodos polimórficos.
+</p>
+<button onclick="document.getElementById('id04').style.display='block'"
+class="w3-button">Polimorfismo</button>
+
+<div id="id04" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id04').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <img src="poli.png"/>
+    </div>
+  </div>
+</div>
+
+<!-- atributos-->
+
+<section id="Atributos"></section>
+<h2>Atributos</h2>
+<img width="30%" height="50%" src="atrib.png">
+<p>Atributos são as características de um objeto, essas características também são conhecidas como variáveis, utilizando o exemplo dos cães, temos alguns atributos, tais como: cor, peso, altura e nome.
+</p>
+
+<button onclick="document.getElementById('id05').style.display='block'"
+class="w3-button">Atributos</button>
+
+<div id="id05" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id05').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <img src="atributos.png"/>
+    </div>
+  </div>
+</div>
+
+<!--metodos-->
+
+<section id="Métodos"></section>
+<h2>Métodos</h2>
+<img width="30%" height="50%" src="met.png">
+<p>Além das características, outra coisa que identifica os seres humanos são suas ações;
+    correr, comer, beber, dormir, falar, etc… Estas ações na orientação a objetos chamamos
+    de métodos.
+    <br>Podemos entender que os métodos são as ações da classe, o que exatamente a classe
+    irá fazer. Em resumo, <b>são as tarefas, ações que a classe pode executar.</b>
+    <br>
+    <b>Criando os Métodos da Classe: </b>Por exemplo, quando criado um método com a ação de
+    depositar um valor para uma conta bancária, dentro desse método são incluídas as ações
+    que irão retornar algum valor, trabalhar em uma variável ou até mesmo chamar outro
+    método já criado.
+</p>
+<button onclick="document.getElementById('id06').style.display='block'"
+class="w3-button">Métodos</button>
+
+<div id="id06" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id06').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <img width="30%" height="50%" src="metodos.png"/>
+    </div>
+  </div>
+</div>
+
+<!--pacotes-->
+
+<section id="Pacotes"></section>
+<h2>Pacotes</h2>
+<img width="30%" height="50%" src="pac.png">
+<p>Pacote em Java é um mecanismo para encapsular um grupo de classes, subpacotes e
+    interfaces. Os pacotes são usados para:</p>
+<br>
+<li>Prevenindo conflitos de nomenclatura, ou seja, pode haver classes com nomes iguais,
+    porém em pacotes diferentes.</li>
+<br>
+<li>Facilitando a pesquisa/localização e o uso de classes, interfaces, enumerações e
+    anotações.</li>
+<br>
+<li>Fornecendo acesso controlado: protegido e padrão tem controle de acesso de nível de
+    pacote. Um membro protegido é acessível por classes no mesmo pacote e suas subclasses.
+    Um membro padrão (sem nenhum especificador de acesso) pode ser acessado apenas por
+    classes no mesmo pacote.</li>
+<br>
+<li>Os pacotes podem ser considerados como encapsulamento de dados (ou ocultação de dados).
+</li>
+<p>Tudo o que precisamos fazer é colocar classes relacionadas em pacotes. Depois disso,
+    podemos simplesmente escrever uma classe de importação de pacotes existentes e usá-la em
+    nosso programa. Um pacote é um contêiner de um grupo de classes relacionadas onde
+    algumas das classes são acessíveis são expostas e outras são mantidas para fins internos.
+    Podemos reutilizar classes existentes dos pacotes quantas vezes precisarmos em nosso programa.
+    <br>
+    <br><b>Implementação de pacotes em classes:</b> Podemos adicionar mais classes a um pacote criado usando o nome do pacote na parte superior do programa e salvando-o no diretório do pacote. Precisamos de um novo arquivo java para definir uma classe pública, caso contrário, podemos adicionar a nova classe a um arquivo .java existente e
+    recompilá-lo.
+</p>
+<button onclick="document.getElementById('id07').style.display='block'"
+class="w3-button">Pacotes</button>
+
+<div id="id07" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id07').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <img width="30%" height="50%" src="pacote.png"/>
+    </div>
+  </div>
+</div>
+
+<!--interface-->
+
+<section id="Interface Java"></section>
+<h2>Interface Java</h2>
+<img width="30%" height="50%" src="inter.png">
+<p>A interface é uma <b>classe abstrata</b> completamente usada para agrupar
+    métodos relacionados com corpos vazios.
+    <br>
+    <br>Por fim, interface nada mais que uma espécie de contrato de regras que uma classe deve seguir em um determinado contexto. Como em Java não existe herança múltipla, a interface passa a ser uma alternativa.
+    <br>Para acessar os métodos da interface, a interface deve ser "implementada" (como se fosse herdada) por outra classe com a implementada palavra-chave
+    (em vez de <i>extends</i>). O corpo do método de interface é fornecido pela classe "implementar".
+</p>
+<button onclick="document.getElementById('id08').style.display='block'"
+class="w3-button">Interface</button>
+
+<div id="id08" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id08').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <img width="30%" height="50%" src="interface.png"/>
+    </div>
+  </div>
+</div>
+
+<!--enumerações-->
+
+<section id="Enumeração"></section>
+<h2>Enumeração</h2>
+<img width="30%" height="50%" src="enum.png">
+<p>Uma enumeração, ou Enum, é um nome simbólico para um conjunto de valores. As
+    enumerações são tratadas como tipos de dados e você pode usá-las para criar
+    conjuntos de constantes para uso com variáveis e propriedades.
+    <br>
+    <br>As enumerações
+    tornam o código mais claro e mais legível, especialmente quando são usados nomes
+    significativos. Os benefícios da utilização de enumerações são: Reduz erros causados
+    pela transposição ou digitação incorreta de números. Torna mais fácil alterar
+    valores no futuro.
+</p>
+<button onclick="document.getElementById('id09').style.display='block'"
+class="w3-button">Enumeração</button>
+
+<div id="id09" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id09').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <img width="30%" height="50%"src="enu.png"/>
+    </div>
+  </div>
+</div>
+
+<!--serialização de objetos-->
+
+  <section id="Serialização de Objetos Java"></section>
+  <h2>Serialização de Objetos Java</h2>
+  <img width="30%" height="50%" src="serializacao.png" >
+  <p>A serialização é quando um objeto é transformado, em uma cadeia de bytes e desta forma pode ser manipulado de maneira mais fácil, seja através de transporte pela rede ou salvo no disco. Possibilitará capturar o estado do objeto ou a estrutura de dados, e transformar em uma cadeia de bytes quando for necessário.
+  </p>
+  <button onclick="document.getElementById('id10').style.display='block'"
+class="w3-button">Serialização de Objetos</button>
+
+<div id="id10" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id10').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <img src="serializacao.png">
+    </div>
+  </div>
+</div>
+
+<!-- relacionamento de objetos-->
+    <section id="Relacionamento de Objetos"></section>
+    <h2>Relacionamento de Objetos</h2>
+    <img width="30%" height="50%" src="Relacionamento.jpg" >
+    <p>O relacionamento entre objetos define como eles vão interagir ou colaborar para executar uma operação em uma aplicação. Em qualquer aplicação, objetos de classes de interface do usuário vão interagir com objetos da camada de negócios para executar uma operação.<br>
+      <b>Agregação: </b>
+       Forma de composição em que o objeto composto apenas usa ou tem conhecimento da existência do(s) objeto(s) componente(s). Os objetos componentes podem existir sem o agregado e vice-versa.
+       <br>
+      <b>Composição: </b>
+      Forma de associação em que o objeto composto é responsável pela existência dos componentes. O componente não tem sentido fora da composição.
+  </p>
+  
+  <button onclick="document.getElementById('id11').style.display='block'"
+  class="w3-button">Relacionamento de Objetos</button>
+  <div id="id11" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id11').style.display='none'"
+        class="w3-button w3-display-topright">&times;</span>
+        <img src="relacionamento.png"/>
+      </div>
+    </div>
+  </div>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
